@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Outlook Mail No Adspace",
+  "description": "Remove adspace on Outlook Mail",
+  "version": "1.0.2",
+  "minimum_chrome_version": "40",
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://outlook.live.com/owa/*"],
+      "js": ["fix.js"]
+    }
+  ],
+
+  "permissions": [
+    "tabs",
+    "https://outlook.live.com/owa/"
+  ]
+}
