@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Outlook Mail No Adspace",
-  "description": "Remove adspace on Outlook Mail",
+  "name": "Outlook Mail Ads Remover",
+  "description": "Remove adspace for Outlook Mail",
   "version": "1.1.0",
   "minimum_chrome_version": "40",
   "icons": {
