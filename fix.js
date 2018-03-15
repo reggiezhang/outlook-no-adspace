@@ -9,9 +9,18 @@ function load() {
 	}, 1000);
 };
 
+var deleted = false;
+
 function check() {
-	var adspace = document.getElementsByClassName("_2qPmszDwBfYpF7PO9Mn3KN")[0];
-	if (adspace) {
-		adspace.parentNode.removeChild(adspace);
+	// var adspace = document.getElementsByClassName("_2qPmszDwBfYpF7PO9Mn3KN")[0];
+	// if (adspace) {
+	// 	adspace.parentNode.removeChild(adspace);
+	// }
+	var app = document.getElementById('app');
+	var adbarParent = app.children[0].children[1].children[0].children[0];
+	var adbar = adbarParent.children[adbarParent.children.length - 1];
+	if (adbar && !deleted) {
+		adbar.remove();
+		deleted = true;
 	}
 }
