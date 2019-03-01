@@ -16,11 +16,15 @@ function check() {
 	// if (adspace) {
 	// 	adspace.parentNode.removeChild(adspace);
 	// }
-	var app = document.getElementById('app');
-	var adbarParent = app.children[0].children[1].children[0].children[0];
-	var adbar = adbarParent.children[adbarParent.children.length - 1];
-	if (adbar && !deleted) {
-		adbar.remove();
-		deleted = true;
+	try {
+		var app = document.getElementById('app');
+		var adbarParent = app.children[0].children[1].children[0].children[0];
+		var adbar = adbarParent.children[adbarParent.children.length - 1];
+		if (adbar && !deleted) {
+			adbar.remove();
+			deleted = true;
+		}
+	} catch (err) {
+		// console.log(err);
 	}
 }
