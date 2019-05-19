@@ -18,7 +18,7 @@ function check() {
 	// }
 	try {
 		var app = document.getElementById('app');
-		var adbarParent = app.children[0].children[1].children[0].children[0];
+		var adbarParent = app.children[0].children[2].children[0].children[0];
 		var adbar = adbarParent.children[adbarParent.children.length - 1];
 		if (adbar && !deleted) {
 			adbar.remove();
