@@ -17,10 +17,11 @@ function check() {
 	// 	adspace.parentNode.removeChild(adspace);
 	// }
 	try {
+		if (deleted) return;
 		var app = document.getElementById('app');
 		var adbarParent = app.children[0].children[2].children[0].children[0];
 		var adbar = adbarParent.children[adbarParent.children.length - 1];
-		if (adbar && !deleted) {
+		if (adbar) {
 			adbar.remove();
 			deleted = true;
 		}
